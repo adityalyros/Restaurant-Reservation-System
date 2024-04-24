@@ -8,10 +8,10 @@
 }
 
 /* Body styles */
-body {
+/* body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-}
+} */
 
 /* Header styles */
 header {
@@ -45,7 +45,7 @@ header ul li a {
 }
 /* Section styles */
 .section {
-    padding: 4rem 0;
+    padding: 50px;
 }
 
 .container {

@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const signupForm = document.getElementById("signup-form");
     signupForm.addEventListener("submit", function(event) {
         event.preventDefault();
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+        const email = document.getElementById("signup-email").value;
+        const password = document.getElementById("signup-password").value;
         // Here you would implement the sign-up functionality, use API to register a new user
         console.log("Email:", email);
         console.log("Password:", password);
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginForm = document.getElementById("login-form");
     loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+        const email = document.getElementById("login-email").value;
+        const password = document.getElementById("login-password").value;
         // Here you would implement the log-in functionality, use API to log in
         console.log("Email:", email);
         console.log("Password:", password);

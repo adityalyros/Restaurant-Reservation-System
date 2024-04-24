@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -40,7 +40,9 @@ header ul li a {
 }
 
 section {
-    padding: 20px 0;
+    /* padding: 50px; */
+    height: 20px;
+    width: 12;
 }
 
 .category {

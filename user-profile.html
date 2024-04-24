@@ -34,6 +34,39 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript for reservation availability check (reservations.html)
+
+const reservationForm = document.getElementById("reservation-form");
+const availability = document.getElementById("availability");
+
+reservationForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+
+    // Simulate check for availability
+    const available = checkAvailability(date, time);
+    if (available) {
+        availability.innerHTML = "<p>Reservation available for the selected date and time.</p>";
+    } else {
+        availability.innerHTML = "<p>Sorry, no reservations available for the selected date and time.</p>";
+    }
+});
+
+function checkAvailability(date, time) {
+    // Mock function for checking availability
+    // You can replace this with an actual API call
+    // For now, let's say reservations are available from 6 PM to 10 PM every day
+    const availableTimes = [
+        "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00"
+    ];
+
+    const selectedDateTime = date + " " + time;
+    return availableTimes.includes(time);
+}
+
+    </script>
 </body>
 </html>
