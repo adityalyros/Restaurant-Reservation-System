@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System - Reservations</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Babai Hotel</h1>
+                <ul>
+                    <li><a href="Home Page.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signup.html">signup</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="logout.html">logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="reservation" class="section">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div>
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <button type="submit">Check Availability</button>
+            </form>
+
+            <div id="availability" class="hide">
+                <h3>Reservation Availability</h3>
+                <p>Selected Date: <span id="selected-date"></span></p>
+                <p>Selected Time: <span id="selected-time"></span></p>
+                <p>Number of Guests: <span id="selected-guests"></span></p>
+                <p id="availability-status"></p>
+                <button id="confirm-reservation" class="hide">Confirm Reservation</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+</html>

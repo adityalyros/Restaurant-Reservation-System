@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System - Sign Up</title>
+    <style>
+/* Styles specific to this page */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        nav ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 40px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        #signup-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        #signup-form div {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        #signup-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #signup-form input[type="email"],
+        #signup-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        #signup-form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #signup-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Babai Hotel</h1>
+                <ul>
+                    <li><a href="Home Page.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signup.html">signup</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="logout.html">logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="signup" class="section">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <script>
+         function handleFormSubmission(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Log the data in the console
+            console.log("Email: " + email);
+            console.log("Password: " + password);
+
+            // Here you can add your JavaScript code to handle form submission
+            // For example, sending data to server or showing a success message
+        }
+
+        document.getElementById('signup-form').addEventListener('submit', handleFormSubmission);
+    </script>
+</body>
+</html>
